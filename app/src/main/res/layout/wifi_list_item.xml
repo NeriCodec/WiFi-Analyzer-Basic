@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/iv_wifi"
+        android:src="@drawable/ic_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_wifi"
+        android:id="@+id/tv_connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_title_connected"
+        android:visibility="gone"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_wifi"
+        android:id="@+id/tv_ssid"
+        android:layout_below="@+id/tv_connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:layout_marginLeft="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+         />
+
+    <TextView
+        android:layout_toRightOf="@+id/iv_wifi"
+        android:id="@+id/tv_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ssid"
+        android:layout_marginLeft="16dp"
+        android:text="fja:fdj32:fdkjsl3:fsa" />
+
+    <TextView
+        android:layout_toRightOf="@+id/iv_wifi"
+        android:id="@+id/tv_ip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_mac"
+        android:layout_marginLeft="16dp"
+        android:text="192.168.1.00" />
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/iv_wifi"
+        android:layout_below="@+id/tv_mac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/rl_signal_level"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="-37"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_toRightOf="@+id/tv_dbm"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="dBm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/tv_dbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tv_title_signal_level"
+                android:textColor="@color/colorTitleWifi"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/rl_channel"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/rl_signal_level"
+            android:layout_below="@+id/tv_mac"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_porcentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="8"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="%"
+                android:layout_toEndOf="@+id/tv_porcentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv_porcentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tv_title_signalQuality"
+                android:textColor="@color/colorTitleWifi"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/rl_frecuency"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/rl_channel"
+            android:layout_below="@+id/tv_mac"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:text="2334"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="MHz"
+                android:layout_toEndOf="@+id/tv_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@id/tv_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tv_title_frequency"
+                android:textAlignment="center"
+                android:textColor="@color/colorTitleWifi"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

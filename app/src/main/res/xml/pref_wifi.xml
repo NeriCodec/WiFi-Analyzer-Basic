@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="@string/key_wifi_time_interval"
+        android:title="@string/title_time_interval"
+        android:dialogTitle="@string/title_time_interval_with"
+        android:entries="@array/time_interval_human"
+        android:entryValues="@array/time_interval"
+        android:defaultValue="@string/time_interval_default"/>
+
+    <ListPreference
+        android:key="@string/key_wifi_signal_max"
+        android:title="@string/title_signal_max"
+        android:dialogTitle="@string/title_signal_max"
+        android:entries="@array/signal_max_human"
+        android:entryValues="@array/signal_max"
+        android:defaultValue="@string/signal_max_default"/>
+
+    <CheckBoxPreference
+        android:key="@string/key_graph_active_line_max"
+        android:title="@string/title_line_signal_max"
+        android:summaryOff="@string/title_pref_off_line"
+        android:summaryOn="@string/title_pref_on_line"
+        android:defaultValue="@bool/line_max_default"/>
+
+    <ListPreference
+        android:key="@string/key_wifi_signal_medium"
+        android:title="@string/title_signal_medium"
+        android:dialogTitle="@string/title_signal_medium_with"
+        android:entries="@array/signal_medium_human"
+        android:entryValues="@array/signal_medium"
+        android:defaultValue="@string/signal_medium_default"/>
+
+    <CheckBoxPreference
+        android:key="@string/key_graph_active_line_medium"
+        android:title="@string/title_line_signal_medium"
+        android:summaryOff="@string/title_pref_off_line"
+        android:summaryOn="@string/title_pref_on_line"
+        android:defaultValue="@bool/line_medium_default"/>
+
+</PreferenceScreen>

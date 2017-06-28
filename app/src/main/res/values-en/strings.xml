@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_wifi">WiFi</string>
+    <string name="settings">Settings</string>
+    <string name="app_name">WiFi Analyzer</string>
+    <string name="title_time_interval">Scan interval</string>
+    <string name="title_graph">Graph</string>
+    <string name="title_graph_signal">WiFi Signal</string>
+    <string name="title_line_signal_max">Line max signal</string>
+    <string name="title_line_signal_medium">Line medium signal</string>
+    <string name="title_not_data">Not data graph</string>
+    <string name="title_signal_max">Select max signal</string>
+    <string name="title_signal_medium">Select medium signal</string>
+    <string name="title_signal_medium_with">Medium for signal</string>
+    <string name="title_time_interval_with">Scan interval</string>
+    <string name="title_graph_line_signal_medium">Medium signal</string>
+    <string name="title_graph_line_signal_max">Max signal</string>
+    <string name="action_bar_title_graph_wifi">Graph WiFi</string>
+    <string name="action_bar_title_list_wifi">List WiFi</string>
+    <string name="action_bar_title_settings">Settings</string>
+    <string name="title_graph_data">Signal WiFi</string>
+    <string name="tv_title_connected">Connected</string>
+    <string name="tv_title_signal_level">Signal level</string>
+    <string name="tv_title_signalQuality">Signal quality</string>
+    <string name="tv_title_frequency">Frequency</string>
+    <string name="title_pref_on_line">On line</string>
+    <string name="title_pref_off_line">Off line</string>
+
+    <!-- Valores para leer de forma humana el intervalo de tiempo de escaneo -->
+    <string-array name="time_interval_human">
+        <item>1 second</item>
+        <item>2 seconds</item>
+        <item>3 seconds</item>
+        <item>4 seconds</item>
+        <item>5 seconds</item>
+    </string-array>
+
+</resources>

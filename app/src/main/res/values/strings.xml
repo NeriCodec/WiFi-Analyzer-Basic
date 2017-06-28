@@ -1,0 +1,101 @@
+<resources>
+    <!-- Textos para la aplicacion -->
+    <string name="app_name">WiFi Analyzer</string>
+    <string name="settings">Configuracion</string>
+
+    <!-- TItulos para el SharedPreferences -->
+    <string name="title_graph">Gráfica</string>
+    <string name="title_wifi">WiFi</string>
+    <string name="title_time_interval">Intervalo de tiempo para escanear</string>
+    <string name="title_signal_medium">Seleccione la señal media</string>
+    <string name="title_signal_max">Seleccione la señal alta</string>
+    <string name="title_signal_medium_with">Media para la señal:</string>
+    <string name="title_time_interval_with">Intervalo de tiempo cada:</string>
+    <string name="title_line_signal_medium">Linea de señal media</string>
+    <string name="title_line_signal_max">Linea de señal alta</string>
+    <string name="title_graph_signal">Señales de WiFi</string>
+    <string name="title_not_data">No hay datos para graficar.</string>
+    <string name="title_graph_line_signal_medium">Señal media</string>
+    <string name="title_graph_line_signal_max">Señal alta</string>
+    <string name="title_graph_data">Señales de WiFi</string>
+    <string name="tv_title_connected">Conectado</string>
+    <string name="tv_title_signal_level">Nivel de señal</string>
+    <string name="tv_title_signalQuality">Calidad de señal</string>
+    <string name="tv_title_frequency">Frecuencia</string>
+    <string name="title_pref_on_line">Linea activada</string>
+    <string name="title_pref_off_line">Linea desactivada</string>
+
+    <!-- Valores para el intervalo de tiempo de escaneo -->
+    <string-array translatable="false" name="time_interval">
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- Valores para leer de forma humana el intervalo de tiempo de escaneo -->
+    <string-array name="time_interval_human">
+        <item>1 segundo</item>
+        <item>2 segundos</item>
+        <item>3 segundos</item>
+        <item>4 segundos</item>
+        <item>5 segundos</item>
+    </string-array>
+
+    <!-- Valores para la senal media  -->
+    <string-array translatable="false" name="signal_medium">
+        <item>70</item>
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+    </string-array>
+
+
+    <!-- Valores para leer de forma humana la senal media-->
+    <string-array translatable="false" name="signal_medium_human">
+        <item>70 %</item>
+        <item>60 %</item>
+        <item>50 %</item>
+        <item>40 %</item>
+        <item>30 %</item>
+    </string-array>
+
+    <!-- Valores para la senal media  -->
+    <string-array translatable="false" name="signal_max">
+        <item>100</item>
+        <item>90</item>
+        <item>80</item>
+    </string-array>
+
+
+    <!-- Valores para leer de forma humana la senal media-->
+    <string-array translatable="false" name="signal_max_human">
+        <item>100 %</item>
+        <item>90 %</item>
+        <item>80 %</item>
+    </string-array>
+
+    <!-- Valores por defecto para el sharedPreferences -->
+    <string name="time_interval_default" translatable="false">3000</string>
+    <string name="signal_medium_default" translatable="false">50</string>
+    <string name="signal_max_default" translatable="false">100</string>
+    <bool name="line_medium_default">true</bool>
+    <bool name="line_max_default">true</bool>
+
+    <!-- Claves para el sharedPreferences -->
+    <string name="key_wifi_time_interval" translatable="false">key_timeInterval</string>
+    <string name="key_wifi_signal_medium" translatable="false">key_signalMedium</string>
+    <string name="key_wifi_signal_max" translatable="false">key_signalMax</string>
+    <string name="key_graph_active_line_medium" translatable="false">key_activeLineMedium</string>
+    <string name="key_graph_active_line_max" translatable="false">key_activeLineMax</string>
+
+
+    <!-- Titulos para el actionBar-->
+    <string name="action_bar_title_graph_wifi">Gráfica de WiFi</string>
+    <string name="action_bar_title_list_wifi">Lista de WiFi</string>
+    <string name="action_bar_title_settings">Configuración</string>
+
+
+</resources>
